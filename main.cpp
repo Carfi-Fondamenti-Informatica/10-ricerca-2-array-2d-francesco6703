@@ -13,10 +13,7 @@ int main() {
     
  
     char nome[15], cognome[15];
-    cout << "Inserisci il nome da cercare: ";
     inserimento(nome, 15);
-    
-    cout << "Inserisci il cognome da cercare: ";
     inserimento(cognome, 15);
     
     int id = ricerca(nomi, cognomi, nome, cognome);
