@@ -9,9 +9,7 @@ int main() {
     inserimento(nomi, cognomi);
     
     char nome[15], cognome[15];
-    cout << "Inserisci il nome da cercare: ";
     cin.getline(nome, 15);
-    cout << "Inserisci il cognome da cercare: ";
     cin.getline(cognome, 15);
     
     int id = ricerca(nomi, cognomi, nome, cognome);
