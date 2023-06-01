@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include "lib.h"
+using namespace std;
 int main() {
     char nomi[5][15], cognomi[5][15];
     init(nomi);
