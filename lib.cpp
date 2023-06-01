@@ -17,9 +17,7 @@ void init(char mat[5][15]) {
 
 void inserimento(char nomi[5][15], char cognomi[5][15]) {
     for (int i = 0; i < 5; i++) {
-        cout << "Inserisci nome #" << i + 1 << ": ";
         cin.getline(nomi[i], 15);
-        cout << "Inserisci cognome #" << i + 1 << ": ";
         cin.getline(cognomi[i], 15);
     }
 }
