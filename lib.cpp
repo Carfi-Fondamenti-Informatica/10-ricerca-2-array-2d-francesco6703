@@ -1,63 +1,31 @@
 #include <iostream>
-#include "lib.h"
+#include <cstring>
 using namespace std;
 
-void init (char mat[], int n){ //nomi
-    for(int i=0;i<n;i++){
-        mat[i]= ' ';
-    }
-}
-void init(char mat[5][15]){ // cognomi
-    for(int i=0;i<5;i++){
-        init(mat[i],15);
+void init(char mat[], int n) {
+    for (int i = 0; i < n; i++) {
+        mat[i] = ' ';
     }
 }
 
-
-void inserimento(char str[], int size) {
-    cin.getline(str, size);
-}
-
-
-bool controllo1(char nomi[5][15], char nome[]) {
+void init(char mat[5][15]) {
     for (int i = 0; i < 5; i++) {
-        int j = 0;
-        while (nomi[i][j] != '\0' && nome[j] != '\0') {
-            if (nomi[i][j] != nome[j]) {
-                break;
-            }
-            j++;
-        }
-        if (nomi[i][j] == '\0' && nome[j] == '\0') {
-            return true;
-        }
+        init(mat[i], 15);
     }
-    return false;
 }
 
-
-
-bool controllo2(char cognomi[5][15], char cognome[]) {
-    for (int a = 0; a < 5; a++) {
-        int j = 0;
-        while (cognomi[a][j] != '\0' && cognome[j] != '\0') {
-            if (cognomi[a][j] != cognome[j]) {
-                break;
-            }
-            j++;
-        }
-        if (cognomi[a][j] == '\0' && cognome[j] == '\0') {
-            return true;
-        }
-    }
-    return false;
+void inserimento(char nomi[5][15], char cognomi[5][15]) {
+    for (int i = 0; i < 5; i++) {
+        cin.getline(nomi[i], 15);
+        cin.getline(cognomi[i], 15);
+  }
 }
 
 int ricerca(char nomi[5][15], char cognomi[5][15], char nome[], char cognome[]) {
     for (int i = 0; i < 5; i++) {
-        if (controllo1(nomi, nome)  && controllo2(cognomi, cognome)) {
+        if (strcmp(nomi[i], nome) == 0 && strcmp(cognomi[i], cognome) == 0) {
             return i;
         }
     }
-            return -1;
-    }
+    return -1;
+}
