@@ -15,4 +15,5 @@ int main() {
  }else{
  cout << "non trovato" <<endl;
  }
- r
+ return 0;
+}
