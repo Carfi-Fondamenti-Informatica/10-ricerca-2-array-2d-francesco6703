@@ -14,12 +14,22 @@ void init(char mat[5][15]) {
     }
 }
 
+void inserimentonome(char nome[], int a=15){
+		cin.getline(nome, a);
+}
+
+void inserimentocognome(char cognome[], int a=15){
+		cin.getline(cognome, a);
+}
+
 void inserimento(char nomi[5][15], char cognomi[5][15]) {
     for (int i = 0; i < 5; i++) {
         cin.getline(nomi[i], 15);
         cin.getline(cognomi[i], 15);
   }
 }
+
+
 
 int ricerca(char nomi[5][15], char cognomi[5][15], char nome[], char cognome[]) {
     for (int i = 0; i < 5; i++) {
