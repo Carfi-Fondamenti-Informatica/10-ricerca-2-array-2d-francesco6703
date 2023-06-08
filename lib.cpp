@@ -15,7 +15,7 @@ void init(char mat[5][15]) {
     }
 }
 
-void inserisci_stringa(char cstring[], int a = 15) {
+void inserisci_stringa(char cstring[], int a) {
     cin.getline(cstring, a);
 }
 
