@@ -20,12 +20,9 @@ void inserisci_stringa(char cstring[], int a) {
 }
 
 void inserimento(char nomi[5][15], char cognomi[5][15]) {
-    cout << endl << "Inserisci la lista dei nomi e cognomi" << endl;
     for (int i = 0; i < 5; i++) {
-        cout << "\t" << i << " - nome: ";
-        inserisci_stringa(nomi[i]);
-        cout << "\t" << i << " - cognome: ";
-        inserisci_stringa(cognomi[i]);
+        inserisci_stringa(nomi[i], 15);
+        inserisci_stringa(cognomi[i], 15);
     }
 }
 
