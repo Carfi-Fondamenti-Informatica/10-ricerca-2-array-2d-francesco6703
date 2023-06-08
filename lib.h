@@ -1,9 +1,5 @@
-void init(char mat[], int n);
-
+void init (char mat[], int n);
 void init(char mat[5][15]);
-
-void inserimento(char nomi[][15], char cognomi[][15]);
-
-void inserisci_stringa(char cstring[], int a);
-
-int ricerca(char nomi[5][15], char cognomi[5][15], char nome[], char cognome[]);
+void inserimento(char nomi[5][15], char cognomi[5][15]);
+void inserimento(char mat[], int nomi);
+int ricerca(char nomi[5][15], char cognomi[5][15], char nome[15], char cognome[15]);
