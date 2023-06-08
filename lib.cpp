@@ -28,9 +28,6 @@ void inserimento(char nomi[5][15], char cognomi[5][15]){
 void inserimento(char mat[], int a){
     char n[a*10];
     init(n,a*10);
-    //for(int i=0;i<(a*10);i++){
-    //   mat[i]=n[a*10];
-    // }
 
     cin >> n;
 
